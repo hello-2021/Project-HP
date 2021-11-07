@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>HarryPotter</title>
+    <!-- ?volume 0-4002 -->
+    <embed src="./Hedwig's Theme.mp3" hidden="true" autostart="true" loop="true"></embed>
+</head>
+<body>
+    <script>
+        window.onscroll = function(){
+            var scrolled = document.documentElement.scrollTop || document.body.scrollTop
+            
+            var scrolle = scrolled / 10
+            // /(document.body.clientHeight-
+            // document.documentElement.clientHeight) * 100
+            console.log(scrolle)
+
+            //title show
+            var h1 = document.getElementById('title')
+            if(scrolle > 5){
+                h1.style.backgroundPositionX = '0%';
+            }
+            else h1.style.backgroundPositionX = '100%';
+            //title move
+            if(scrolle > 18){
+                var pd = window.innerWidth/1200*35;
+                h1.style.paddingRight = pd + `rem`;
+                // console.log(pd);
+            }
+            else{
+                h1.style.paddingRight = 0;
+            }
+            if(scrolle > 20){
+                h1.style.position = 'fixed';
+                h1.style.top = '-1rem';
+                h1.style.left = '3rem';
+                h1.style.fontSize = '4rem';
+            }
+            //story show
+            // var h2s = document.getElementById('story')
+            // var h2s2 = document.getElementById('story2')
+            if(scrolle > 78){
+                for(var i = 1;i <= 4;i++){
+                    document.getElementById('story'+i).style.backgroundPositionX = '0%';
+                }
+                // h2s.style.backgroundPositionX = '0%';
+                // h2s2.style.backgroundPositionX = '0%';
+            }
+            else{
+                for(var i = 1;i <= 4;i++){
+                    document.getElementById('story'+i).style.backgroundPositionX = '100%';
+                }
+            }
+
+            document.documentElement.style.setProperty('--scrolle', scrolle)
+        }
+    </script>
+
+    <div class="main">
+        <div class="titlebox"><h1 id="title">HarryPotter</h1></div>
+        <div class="content">
+            <div class="story">
+                <div>
+                    <h2 id="story1">Stories of </h2><br />
+                    <h2 id="story2">Harry Potter</h2>
+                </div>
+                <div style="margin-left: 10rem;">
+                    <p1 id="story3">hgwc</p>
+                </div>
+            </div>
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+            <p1>hi</p1><br />
+        </div>
+    </div>
+</body>
+</html>

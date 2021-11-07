@@ -1,0 +1,123 @@
+@font-face{
+    font-family: 'HPType';
+    src: url('./HARRYP.TTF');
+}
+
+/* :root{ */
+    /* --scrolle: 0%; */
+/* } */
+
+body{
+    /* background: rgb(253, 241, 225); */
+    background: url('./bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;                
+    background-size: cover;
+
+    margin: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.titlebox{
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+div.story{
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-family: "HPType";
+    color: #1d1d1d;
+    font-weight: 300;
+    font-size: 6rem;
+    margin-bottom: -5rem;
+    margin-left: 5rem;
+
+    background-image: linear-gradient(75deg, rgba(0,0,0,1) 0%,
+     rgba(0,0,0,1) 33.33%, 
+     rgba(214,178,119,0) 66.67%,
+     rgba(214,178,119,0) 100%);
+    background-size: 300% 100%;
+    background-position-x: 100%;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    transition: 3.25s background-position-x ease-in-out,
+     0.7s padding-right ease-in-out,
+     0.4s font-size ease-in-out;
+}
+
+h1{
+    font-family: "HPType";
+    color: #1d1d1d;
+    font-weight: 500;
+    font-size: 10rem;
+
+    background-image: linear-gradient(75deg, rgba(0,0,0,1) 0%,
+     rgba(0,0,0,1) 33.33%, 
+     rgba(214,178,119,0) 66.67%,
+     rgba(214,178,119,0) 100%);
+    background-size: 300% 100%;
+    background-position-x: 100%;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    /* animation-name: show;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    -webkit-animation-name: show;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 3s; */
+
+    transition: 3.25s background-position-x ease-in-out,
+     0.7s padding-right ease-in-out,
+     0.4s font-size ease-in-out;
+
+}
+
+/* h1:hover{
+    background-position-x: 0%;
+} */
+
+/* @keyframes show{
+    from{
+        background-position-x: 100%;
+    }
+    to{
+        background-position-x: 0%;
+    }
+} */
+
+p1{
+    font-family: "HPType";
+    font-weight: 200;
+    font-size: 3rem;
+
+    background-image: linear-gradient(75deg, rgba(0,0,0,1) 0%,
+     rgba(0,0,0,1) 33.33%, 
+     rgba(214,178,119,0) 66.67%,
+     rgba(214,178,119,0) 100%);
+    background-size: 300% 100%;
+    background-position-x: 100%;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    transition: 3.25s background-position-x ease-in-out,
+     0.7s padding-right ease-in-out,
+     0.4s font-size ease-in-out;
+}
