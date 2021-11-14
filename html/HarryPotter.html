@@ -40,20 +40,20 @@
                 h1.style.position = 'fixed';
                 h1.style.top = '-1rem';
                 h1.style.left = '3rem';
-                h1.style.fontSize = '4rem';
+                h1.style.fontSize = '3rem';
             }
             //story show
             // var h2s = document.getElementById('story')
             // var h2s2 = document.getElementById('story2')
             if(scrolle > 78){
-                for(var i = 1;i <= 4;i++){
+                for(var i = 1;i <= 8;i++){
                     document.getElementById('story'+i).style.backgroundPositionX = '0%';
                 }
                 // h2s.style.backgroundPositionX = '0%';
                 // h2s2.style.backgroundPositionX = '0%';
             }
             else{
-                for(var i = 1;i <= 4;i++){
+                for(var i = 1;i <= 8;i++){
                     document.getElementById('story'+i).style.backgroundPositionX = '100%';
                 }
             }
@@ -67,11 +67,17 @@
         <div class="content">
             <div class="story">
                 <div>
-                    <h2 id="story1">Stories of </h2><br />
-                    <h2 id="story2">Harry Potter</h2>
+                    <h2 class="st" id="story1">Stories of </h2><br />
+                    <h2 class="st" id="story2">Harry Potter</h2>
                 </div>
                 <div style="margin-left: 10rem;">
-                    <p1 id="story3">hgwc</p>
+                    <p1 class="stp" id="story3">the boy who lived<p1 class="stp_c">(大难不死的男孩)</p1></p1><br />
+                    <p1 class="stp" id="story4">↓</p1><br />
+                    <p1 class="stp" id="story5">studied in Hogwarts<p1 class="stp_c">(霍格沃茨魔法学院)</p1></p1><br />
+                    <p1 class="stp" id="story6">↓</p1><br />
+                    <p1 class="stp" id="story7">destroyed<p1 class="stp_c">(销毁)</p1> horcruxes<p1 class="stp_c">(魂器)</p1></p1><br />
+                    <p1 class="stp" id="story8">↓</p1><br />
+                    <p1 class="stp" id="story5">defeated<p1 class="stp_c">(打败)</p1> Voldemort<p1 class="stp_c">(伏地魔)</p1></p1><br />
                 </div>
             </div>
             <p1>hi</p1><br />

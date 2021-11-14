@@ -33,14 +33,14 @@ div.story{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 h2{
     font-family: "HPType";
     color: #1d1d1d;
     font-weight: 300;
-    font-size: 6rem;
-    margin-bottom: -5rem;
-    margin-left: 5rem;
+    font-size: 5rem;
+    
 
     background-image: linear-gradient(75deg, rgba(0,0,0,1) 0%,
      rgba(0,0,0,1) 33.33%, 
@@ -105,6 +105,7 @@ p1{
     font-family: "HPType";
     font-weight: 200;
     font-size: 3rem;
+    margin-left: 10rem;
 
     background-image: linear-gradient(75deg, rgba(0,0,0,1) 0%,
      rgba(0,0,0,1) 33.33%, 
@@ -120,4 +121,20 @@ p1{
     transition: 3.25s background-position-x ease-in-out,
      0.7s padding-right ease-in-out,
      0.4s font-size ease-in-out;
+}
+
+/* p1::after{
+    content: '↓';
+    font-size: 2rem;
+    font-weight: 200;
+} */
+
+h2.st{
+    /* margin-bottom: -5rem; */
+    margin-left: -2rem;
+}
+
+p1.stp_c{
+    margin-left: 0.11rem;
+    font-size: 1.5rem;
 }
